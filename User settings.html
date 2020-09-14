@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Settings</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="Home.html"><img src="image/whitecodebox.JPG" alt="code box brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Menu">
+            <ul class="navbar-nav">
+                <li class="nav-item ml-4"><a href="#" class="nav-link">Loyiha haqida</a></li>
+                <li class="nav-item ml-4"><a href="#" class="nav-link">Dasturlash tillari</a></li>
+                <li class="nav-item ml-4"><a href="#" class="nav-link">Narxlar</a></li>
+            </ul>
+        </div>
+        <div class="d-flex">
+            <button class="borderlar mt-1"><img width="32px" height="32" src="icon/search.svg" alt="search icon">
+            </button>
+            <button class="borderlar mt-1"><img width="32px" src="icon/bell.svg" alt="bell icon"></button>
+            <button class="d-flex borderlar mt-1 border-right-0 ">
+                <img class="ml-2 rounded-lg" width="42px" height="42px" src="image/Ismatov%20Sokhibjon.jpg"
+                     alt="Ismatov Sokhibjon picture">
+                <p class="ml-2">Sokhibjon Ismatov<br> <small class="text-muted mr-2">Ta'rif: 6 OY |
+                    09.07.2019</small></p>
+            </button>
+            <div class="dropdown ml-4">
+                <button type="button" id="dropdown3dots"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="icon/more.svg" class="mt-2" width="32px" alt="3 dots">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right mt-2" aria-labelledby="dropdown3dots">
+                    <button class="dropdown-item lead" type="button">Muhammad Jumayev</button>
+                    <button class="dropdown-item lead" type="button">Parmonov Jushkin</button>
+                    <button class="dropdown-item lead" type="button">Other</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main>
+    <div class="container">
+        <section class="my-5">
+            <h2 class="font-weight-bold">Foydalanuvchi sozlamalari</h2>
+            <div class="row my-5">
+                <div class="col-md-3">
+                    <img src="image/Ismatov%20Sokhibjon.jpg" class="rounded-circle" width="140" height="140"
+                         alt="Sokhibjon Ismatov">
+                    <div class="half-circle text-center">
+                        <div class="image-upload">
+                            <label for="file-input">
+                                <img class="my-2" src="icon/camera.svg" width="30" alt="camera icon">
+                            </label>
+                            <input type="file" id="file-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form class="bg-white d-flex px-2 pt-1 rounded-lg" action="https://echo.htmlacademy.ru">
+                        <img class="mx-2 mb-3" src="icon/user.svg" width="25" alt="user icon">
+                        <div class="form-group mb-0">
+                            <label class="mb-0 ml-3" for="name">To'liq ismi</label>
+                            <input type="text" class="form-control ml-1 pt-0" id="name" placeholder="Ismatov Sokhibjon"
+                                   aria-describedby="name">
+                        </div>
+                    </form>
+                    <form class="bg-white d-flex px-2 pt-1 rounded-lg my-4" action="https://echo.htmlacademy.ru">
+                        <img class="mx-2 mb-3" src="icon/phone.svg" width="25" alt="phone icon">
+                        <div class="form-group mb-0">
+                            <label class="mb-0 ml-3" for="nomer">Telefon nomer</label>
+                            <input type="tel" class="form-control ml-1 pt-0" id="nomer" placeholder="+998998714525"
+                                   aria-describedby="Phone number">
+                        </div>
+                    </form>
+                    <form class="bg-white d-flex px-2 pt-1 rounded-lg my-4" action="https://echo.htmlacademy.ru">
+                        <img class="mx-2 my-3" src="icon/lock.png" width="30" height="30" alt="lock icon">
+                        <div class="form-group mb-0">
+                            <label class="mb-0 ml-3" for="password">Parol</label>
+                            <input type="password" class="form-control ml-1 pt-0" id="password"
+                                   placeholder="************"
+                                   aria-describedby="Password">
+                        </div>
+                    </form>
+                    <form class="bg-white d-flex px-2 pt-1 rounded-lg my-4" action="https://echo.htmlacademy.ru">
+                        <img class="mx-2 my-3" src="icon/lock.png" width="30" height="30" alt="lock icon">
+                        <div class="form-group mb-0">
+                            <label class="mb-0 ml-3" for="pasconfirm">Parolni tasdiqlash</label>
+                            <input type="password" class="form-control ml-1 pt-0" id="pasconfirm"
+                                   placeholder="************"
+                                   aria-describedby="Password Confirm">
+                        </div>
+
+                    </form>
+                    <button class="btn del" type="reset">
+                        <img class="mb-1" src="icon/trash.svg" width="20" alt="trash icon">
+                        O'chirish
+                    </button>
+                    <button class="btn save" type="submit">
+                        Saqlash
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="pt-4 pb-5">
+            <h2 class="font-weight-bold mb-4">Foydalanuvchi natijalari</h2>
+            <div class="row mb-5">
+                <div class="col-5 bg-white px-5 py-4">
+                    <ul class="list-unstyled d-flex">
+                        <li class="d-flex">
+                            <h1 class="mr-1">125</h1>
+                            <p style="color: #ABABAB;" class="small mb-0 mt-2">Bajarilgan <br> topshiriqlar</p>
+                        </li>
+                        <li class="d-flex mx-4">
+                            <h1 class="mr-1">38</h1>
+                            <p style="color: #ABABAB;" class="small mb-0 mt-2">Bajarilgan <br> bo'limlar</p>
+                        </li>
+                        <li class="d-flex">
+                            <h1 class="mr-1">2</h1>
+                            <p style="color: #ABABAB;" class="small mb-0 mt-2">Dasturlash <br> tillari</p>
+                        </li>
+                    </ul>
+                    <button class="btn del">
+                        <img src="icon/trash.svg" width="20" alt="trash bin">
+                        Tozalash
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="py-4 mt-5">
+    <div class="container">
+        <div class="d-flex">
+            <a href="#"><img src="image/codebox.JPG" alt="code box"></a>
+            <div class="d-none d-md-block m-auto">
+                <ul class="nav  mt-2">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Loyiha haqida</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Dasturlash tillari</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Narxlar</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Biz haqimizda</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="ml-3 mt-2" href="https://youtube.com"><img src="image/facebook-logo.png" alt="facebook"></a>
+            <a class="ml-3 mt-2" href="https://instagram.com"><img src="image/instagram.png" alt="instagram"></a>
+            <a class="ml-3 mt-2" href="https://telegram.org"><img src="image/telegram.png" alt="telegram"></a>
+            <a class="ml-3 mt-2" href="https://youtube.com"><img src="image/youtube-logo.png" alt="youtube"></a>
+        </div>
+        <small>&copy; "Personal Development Process" MCHJ</small>
+    </div>
+</footer>
+
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
